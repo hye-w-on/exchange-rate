@@ -1,4 +1,5 @@
 import ExchangeRatePage from "./component/ExchangeRate/ExchangeRatePage.js";
+import "./index.css";
 
 function App() {
   return (

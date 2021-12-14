@@ -1,18 +1,66 @@
-.exchange-container{
-  margin-top: 3em;
+@import "~antd/dist/antd.css";
+.exchange-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  background-color: #fafafa;
+}
+.datepicker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.exchange-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+.exchange-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2px;
+}
+.exchange-select {
+  width: 300px;
+}
+.exchange-input {
+  margin: 5px;
+}
+.ant-picker-input > input {
+  color: #1e90ff;
+}
+.ant-picker-large .ant-picker-input > input {
+  font-size: 30px;
+}
+.exchange-button {
+  width: 200px;
+}
+.result-edit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.result-edit label {
+  color: #1e90ff;
+  width: 90px;
+  position: relative;
+  height: 28px;
+  bottom: 10px;
+  font-size: 30px;
+}
+.swap-icon {
+  color: #dddddd;
+  font-size: 15px;
+  margin: 2px;
+  width: 100%;
 }
 
-.exchange-form{
-    width: "50%" 
-}
-
-.exchangerate-edit{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.exchange-table {
+  margin-top: 10px;
 }
