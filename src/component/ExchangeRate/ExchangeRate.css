@@ -64,3 +64,6 @@
 .exchange-table {
   margin-top: 10px;
 }
+.ant-table table {
+  font-size: 14px;
+}
