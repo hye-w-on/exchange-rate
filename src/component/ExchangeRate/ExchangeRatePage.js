@@ -20,7 +20,7 @@ function ExchangeRatePage() {
   const [rateEdit, setRateEdit] = useState(false);
   const [foreignCurrency, setForeignCurrency] = useState(0);
   const [krw, setKrw] = useState(0);
-  const [today, setToday] = useState();
+  const [today, setToday] = useState(moment());
   const columns = [
     {
       title: "",
