@@ -52,11 +52,11 @@ function ExchangeRatePage() {
       render: (netChange, curruncyName) => (
         <div>
           {netChange < 0 ? (
-            <Tag color="red" key={curruncyName}>
+            <Tag color="blue" key={curruncyName}>
               <CaretDownOutlined /> {netChange}
             </Tag>
           ) : (
-            <Tag color="blue" key={curruncyName}>
+            <Tag color="red" key={curruncyName}>
               <CaretUpOutlined /> {netChange}
             </Tag>
           )}
@@ -106,8 +106,8 @@ function ExchangeRatePage() {
             preExchangeList.data[i].cur_unit === exchangeList.data[i].cur_unit
           ) {
             let netChange = (
-              preExchangeList.data[i].deal_bas_r.replace(/,/g, "") -
-              exchangeList.data[i].deal_bas_r.replace(/,/g, "")
+              exchangeList.data[i].deal_bas_r.replace(/,/g, "") -
+              preExchangeList.data[i].deal_bas_r.replace(/,/g, "")
             ).toFixed(2);
             Object.assign(exchangeList.data[i], { netChange: netChange });
           } else {
