@@ -67,7 +67,6 @@ function ExchangeRatePage() {
 
   useEffect(() => {
     let inputDate = moment(today);
-    console.log(today);
     let dayToday = inputDate.day(); //일 0, 월 1, 토 6
     let ddate = inputDate;
     let d1date = inputDate;
