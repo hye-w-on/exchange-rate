@@ -93,11 +93,11 @@ function ExchangeRatePage() {
       ddate.getDate().toString();*/
     let neweExchangeList = [];
     Axios.get(
-      "https://rhv2mfccrf.execute-api.ap-northeast-2.amazonaws.com/prod/exchange/" +
+      "https://szumlvi53h.execute-api.ap-northeast-2.amazonaws.com/prod/exchange/" +
         ddateStr
     ).then((exchangeList) => {
       Axios.get(
-        "https://rhv2mfccrf.execute-api.ap-northeast-2.amazonaws.com/prod/exchange/" +
+        "https://szumlvi53h.execute-api.ap-northeast-2.amazonaws.com/prod/exchange/" +
           d1dateStr
       ).then((preExchangeList) => {
         //netChange 계산
